@@ -15,8 +15,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var restaurantImageData = [String]()
     
     
-    var myFriendsArray = ["Sara", "Nicole", "Grant"]
-    var friendsCity = ["Honolulu", "Kailua", "Waiʻanae"]
+    var myFriendsArray = ["Kapolei Kalapawai"]
+    //var friendsCity = []
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myFriendsArray.count
@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")!
         let text = myFriendsArray[indexPath.row]
         cell.textLabel?.text = text
-        cell.detailTextLabel?.text = friendsCity[indexPath.row]
+        //cell.detailTextLabel?.text = friendsCity[indexPath.row]
         return cell
     }
     
